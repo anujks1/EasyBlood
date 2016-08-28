@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.teachindia.myapplication.RequestsDisplayActivity"
+                android:weightSum="1"
+                android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Request :"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Request String"
+        android:id="@+id/textViewResponseRequestString"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonAccept"
+        android:layout_alignEnd="@+id/buttonAccept" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/spacerView1"
+        android:layout_below="@+id/textViewResponseRequestString"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#c0c0c0"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutResponseUserDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.teachmate.teachmate.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_icon"
+            android:id="@+id/imageViewUserProfilePhoto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            app:maskDrawable="@drawable/circle_mask"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Response Username"
+            android:id="@+id/textViewResponseDisplayUserName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imageViewUserProfilePhoto"
+            android:layout_toEndOf="@+id/imageViewUserProfilePhoto"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="User Profession"
+            android:id="@+id/textViewResponseDisplayUserProfession"
+            android:layout_below="@+id/textViewResponseDisplayUserName"
+            android:layout_alignRight="@+id/textViewResponseDisplayUserName"
+            android:layout_alignEnd="@+id/textViewResponseDisplayUserName" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/spacerView2"
+        android:layout_below="@+id/relativeLayoutResponseUserDetails"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Response Message:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/spacerView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_above="@+id/buttonAccept"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_gray"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ResponseString"
+            android:id="@+id/textViewResponseDisplayString"
+            android:background="#2cb5b5b5" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        style="@style/button_text"
+        android:background="@drawable/styled_button"
+        android:id="@+id/buttonAccept"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Response Details:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/spacerView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

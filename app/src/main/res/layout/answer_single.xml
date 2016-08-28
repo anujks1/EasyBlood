@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:id="@+id/click"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Answered_By"
+        android:textStyle="bold"
+        android:fontFamily="sans"
+        android:textColor="#000000"
+        android:id="@+id/tvansweredby"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:fontFamily="sans"
+
+        android:text="@string/Answered_Time"
+        android:id="@+id/tvansweredtime"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Real_Answer"
+        android:fontFamily="sans"
+
+        android:textColor="#000000"
+        android:id="@+id/tvrealanswer"
+        android:layout_below="@+id/tvansweredtime"
+        android:paddingBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans"
+
+
+        android:id="@+id/tvanswerid"
+        android:layout_toRightOf="@+id/tvansweredby"
+        android:layout_alignTop="@+id/tvrealanswer"
+        android:layout_above="@+id/tvrealanswer" />
+</RelativeLayout>

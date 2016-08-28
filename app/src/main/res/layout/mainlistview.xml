@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainrel"
+    tools:context=".MainActivity">
+
+
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        tools:listitem="@layout/singlerow"
+        style="@style/AppTheme"
+        android:layout_gravity="bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etsearch" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:background="@drawable/oval"
+        android:layout_height="wrap_content"
+        android:id="@+id/etsearch"
+        android:hint="@string/searchhere"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

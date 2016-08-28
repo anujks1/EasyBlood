@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Your Message : "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#ff000000"
+        android:padding="5dp">
+
+        <requestFocus />
+
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/list">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Post_Question"
+        android:id="@+id/buttonquestionpost"
+        android:layout_below="@+id/etcategorytitle"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/etquestiontitle"
+        android:background="@drawable/oval"
+        android:padding="5dp"
+        android:gravity="top|left"
+        android:hint="@string/Hint_Enter_Question"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="@string/Ask_New_Question"
+        android:id="@+id/tvtitleask"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/etquestiontitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonquestionpost"
+        android:layout_toStartOf="@+id/buttonquestionpost" />
+
+    <AutoCompleteTextView
+        android:layout_width="fill_parent"
+        android:background="@drawable/oval"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Hint_Enter_Category"
+        android:id="@+id/etcategorytitle"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:id="@+id/tvquestiontitle"
+
+        android:layout_below="@+id/tvtitleask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+

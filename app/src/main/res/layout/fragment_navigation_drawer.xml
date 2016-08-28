@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent" android:dividerHeight="0dp"
+    tools:context="com.teachmate.teachmate.NavigationDrawerFragment"
+    android:background="#f26a6a6a">
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/spacerView1"
+        android:layout_alignParentTop="true"
+        android:layout_height="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#f26a6a6a" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/userInfoNavigationDrawer"
+        android:layout_below="@+id/spacerView1"
+        android:onClick="UpdateFragment"
+        android:layout_height="wrap_content"
+        android:background="#ff3c3c3c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:padding="5dp"
+            android:id="@+id/textViewUserName"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:paddingLeft="5dp"
+            android:id="@+id/textViewEmailId"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffffff" />
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nav_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/spacerView2"
+        android:layout_height="10dp"
+        android:layout_below="@+id/userInfoNavigationDrawer"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#f26a6a6a" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spacerView2"
+        android:background="#f26a6a6a"
+        android:layout_above="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/imageView8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sapth_gray"
+        android:background="#f26a6a6a" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Your_Question"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:paddingBottom="5dp"
+        android:id="@+id/tvquestion_ask_dialogue" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:id="@+id/etquestion_ask_question"
+        android:paddingBottom="12dp"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/Category"
+        android:textSize="18dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/tvcategory_ask_question" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:id="@+id/etcategory_ask_question"
+        android:paddingBottom="12dp"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:id="@+id/cancel_button"
+         android:layout_weight="1"
+            android:layout_gravity="left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ask_Question"
+
+        android:id="@+id/ask_button"
+        android:layout_weight="1"
+        android:layout_gravity="right" />
+        />
+        >
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

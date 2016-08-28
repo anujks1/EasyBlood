@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/detaileddblist"
+    >
+    <com.teachmate.teachmate.CircularImageView
+        android:src="@drawable/user_icon"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageViewdb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        app:maskDrawable="@drawable/circle_mask"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Username"
+        android:id="@+id/tvusernamedb"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewdb"
+        android:layout_toEndOf="@+id/imageViewdb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textColor="#000000"
+        android:id="@+id/tvquestion_iddb"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Asked_Time"
+        android:id="@+id/tvaskedtimedb"
+        android:layout_below="@+id/tvquestion_iddb"
+        android:layout_toRightOf="@+id/imageViewdb"
+        android:layout_toEndOf="@+id/imageViewdb" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Question"
+        android:id="@+id/tvquestiondb"
+        android:maxLines="4"
+        android:layout_below="@+id/imageViewdb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="30dp" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewdbans"
+        tools:listitem="@layout/answer_single"
+        android:layout_below="@+id/tvquestiondb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+     />
+</RelativeLayout>
