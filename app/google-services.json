@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "251836366215",
+    "firebase_url": "https://easyblood-bb88c.firebaseio.com",
+    "project_id": "easyblood-bb88c",
+    "storage_bucket": "easyblood-bb88c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251836366215:android:1cdfb097f6cfe5a5",
+        "android_client_info": {
+          "package_name": "com.app.easyblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251836366215-dr2jqqlpqdrs1gthnenthd8t51b51u71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.easyblood",
+            "certificate_hash": "342D828C94C4469D6DE6A9AAD0253A9E707D4BD8"
+          }
+        },
+        {
+          "client_id": "251836366215-aom1fl68kt4n1i4qggseeco1shmct1n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_CSDdoLGobJxNPXnwW3zzs503WHi862E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251836366215-aom1fl68kt4n1i4qggseeco1shmct1n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
